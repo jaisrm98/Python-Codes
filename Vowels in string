@@ -1,0 +1,7 @@
+s="jaiu"
+vowels = "aeiouAEIOU"
+vowel_count = 0
+for i in s:
+    if i in vowels:
+        vowel_count += 1
+print(vowel_count)
