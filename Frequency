@@ -1,0 +1,36 @@
+l1=[1,1,2,2,2]
+freq=[]
+i=0
+freq=[0]*len(l1)
+while(i<len(l1)):
+    c=1
+    j=i+1
+    while(j<len(l1)):
+        if(l1[i]==l1[j]):
+            l1[j]=-1
+            c+=1
+        j+=1
+    if(l1[i]!=-1):
+        freq[i]=c
+    i+=1
+    
+    
+for i in range(len(freq)):
+    if(l1[i]!=-1):
+        print(str(l1[i])+' Occurs '+str(freq[i])+' times')
+
+max=freq[0]
+
+for i in range(len(freq)):
+    if(freq[i]>max):
+        max=freq[i]
+        k=l1[i]
+        
+print(str(k)+" has max frequency "+str(max))
+    
+OUTPUT:
+1 Occurs 2 times
+2 Occurs 3 times
+2 has max frequency 3
+    
+    
