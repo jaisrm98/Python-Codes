@@ -1,0 +1,15 @@
+l1 = [1, 1, 2, 2, 2]
+freq = {}
+
+for i in l1:
+    if(i in freq):
+        freq[i]+=1
+    else:
+        freq[i]=1
+    
+for key,value in freq.items():
+    print(f"{key} freq is {value}")
+
+OUTPUT:
+1 freq is 2
+2 freq is 3
