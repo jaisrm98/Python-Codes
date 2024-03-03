@@ -1,0 +1,7 @@
+s="1 2 3"
+vowels = "aeiouAEIOU"
+count = 1
+for i in s:
+    if i ==' ':
+        count += 1
+print(count)
